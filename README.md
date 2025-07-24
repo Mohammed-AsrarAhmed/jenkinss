@@ -439,7 +439,7 @@ window.open("loginfail.html");
 </tr>
 <tr><td><input type="button" value="Signin" id="s"
 onclick="validate()"></td>
-<td><input type="reset" value="Reset id="r"></td>
+<td><input type="reset" value="Reset" id="r"></td>
 </tr>
 </table>
 </form>
@@ -470,7 +470,7 @@ async function loginTest() {
 // launch the browser
 let driver = await new Builder().forBrowser("chrome").build();
 try {
-await driver.get("file:///home/mvsr/myloginDemo/login.html");
+await driver.get("file:///home/Desktop/exam033/login.html");//change
 await driver.findElement(By.id("un")).sendKeys("MVSREC");
 await driver.findElement(By.id("pw")).sendKeys("ITD");
 await driver.findElement(By.id("s")).click();
@@ -494,30 +494,37 @@ node mylogin.js
 15.results.mvsr using selenium
 vi collegelogin.js
 const { Builder, By, until } = require("selenium-webdriver");
-const assert = require("assert");
+
 async function loginTest() {
-// launch the browser
-let driver = await new Builder().forBrowser("chrome").build();
-try {
-await driver.get("http://results.mvsrec.edu.in/SBLogin.aspx");
-await driver.findElement(By.id("txtUserName")).sendKeys("245121737129");
-await driver.findElement(By.id("txtPassword")).sendKeys("245121737129");
-await driver.findElement(By.id("btnSubmit")).click();
-const user = await driver.findElement(By.id("lblHTNo")).getText();
-assert.strictEqual(user, "245121737129");
-console.log("success");
-await driver.findElement(By.id("Stud_cpModules_imgbtnExams")).click();
-await driver.findElement(By.id("cpBody_lnkSem")).click();
-const ur = await driver.getCurrentUrl();
-assert.strictEqual(ur,
-"http://results.mvsrec.edu.in/STUDENTLOGIN/Frm_SemwiseStudMarks.aspx");
-console.log("Display marks success");
+  let driver = await new Builder().forBrowser("chrome").build();
+
+  try {
+    await driver.get("http://results.mvsrec.edu.in/SBLogin.aspx");
+
+    await driver.findElement(By.id("txtUserName")).sendKeys("245122749033");
+    await driver.findElement(By.id("txtPassword")).sendKeys("245122749033");
+    await driver.findElement(By.id("btnSubmit")).click();
+
+    // Wait for exam button to load
+    await driver.wait(until.elementLocated(By.id("Stud_cpModules_imgbtnExams")), 5000);
+    await driver.findElement(By.id("Stud_cpModules_imgbtnExams")).click();
+
+    // Wait for sem link
+    await driver.wait(until.elementLocated(By.id("cpBody_lnkSem")), 5000);
+    await driver.findElement(By.id("cpBody_lnkSem")).click();
+
+    // Wait for URL to change
+    await driver.wait(until.urlContains("Frm_SemwiseStudMarks.aspx"), 5000);
+    const ur = await driver.getCurrentUrl();
+    console.log("URL after login:", ur);
+  } finally {
+//    await driver.quit();
+  }
 }
-finally {
-await driver.quit();
-}
-}
+
 loginTest();
+
+
 COMMANDS
 npm init
 npm install selenium-webdriver
