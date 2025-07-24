@@ -106,6 +106,8 @@ GIT COMMANDS
 $ git config --global user.name “username”
 $ git config --global user.email “user@mail.com”
 6.git push origin master
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
 2. #sum and average java
 Vi SumAverage.java
 public class SumAverage {
@@ -119,6 +121,8 @@ System.out.println("Sum = " + sum);
 System.out.println("Average = " + average);
 }
 }
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
 3. # arithmetic operations
 Vi ArithmeticOperations.java
 public class ArithmeticOperations {
@@ -131,6 +135,8 @@ System.out.println("Multiplication = " + (a * b));
 System.out.println("Division = " + (a / b));
 }
 }
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
 4. Student details
 public class StudentDetails {
 public static void main(String[] args) {
@@ -141,6 +147,8 @@ System.out.println("Roll No: " + rollNo);
 System.out.println("Department: " + department);
 }
 }
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
 5. Docker sum and average
 Vi SumAverage.java
 public class SumAverage {
@@ -167,6 +175,8 @@ o $ docker run -it javaimage
 3.$ docker login -u [Dockerhubusername]
 4.docker tag javaimage Dockerhubusername/javaimage
 5.$ docker push Dockerhubusername/javaimage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
 6.arthimetic operations docker
 public class ArithmeticOperations {
 public static void main(String[] args) {
@@ -190,6 +200,9 @@ o $ docker run -it javaimage
 3.$ docker login -u [Dockerhubusername]
 4.docker tag javaimage Dockerhubusername/javaimage
 5.$ docker push Dockerhubusername/javaimage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
+
 7.docker student details
 public class StudentDetails {
 public static void main(String[] args) {
@@ -214,6 +227,9 @@ o $ docker run -it javaimage
 3.$ docker login -u [Dockerhubusername]
 4.docker tag javaimage Dockerhubusername/javaimage
 5.$ docker push Dockerhubusername/javaimage
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
 8. Sum and average docker
 sum_avg.py
 total = 0
@@ -233,6 +249,10 @@ o $ docker run -it pythonimage
 3.$ docker login -u [Dockerhubusername]
 4.docker tag pythonimage Dockerhubusername/pythonimage
 5.$ docker push Dockerhubusername/pythonimage
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
+
 9.arthimetic docker python
 arithmetic.py
 a = 12
@@ -253,6 +273,10 @@ o $ docker run -it pythonimage
 3.$ docker login -u [Dockerhubusername]
 4.docker tag pythonimage Dockerhubusername/pythonimage
 5.$ docker push Dockerhubusername/pythonimage
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
+
 10.student details docker py
 name = "name"
 roll_no = "21CS123"
@@ -271,6 +295,10 @@ o $ docker run -it pythonimage
 3.$ docker login -u [Dockerhubusername]
 4.docker tag pythonimage Dockerhubusername/pythonimage
 5.$ docker push Dockerhubusername/pythonimage
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
+
 11.webpage docker
 bgcolordemo1.html
 <html>
@@ -307,6 +335,10 @@ Docker commands
 3.$ docker login -u [Dockerhubusername]
 4.docker tag htmlimage Dockerhubusername/htmlimage
 5.$ docker push Dockerhubusername/htmlimage
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
+
 12. Login validation docker
 <!DOCTYPE html>
 <html>
@@ -347,6 +379,10 @@ o $ docker run -d -p 8080:80 htmlimage
 3.$ docker login -u [Dockerhubusername]
 4.docker tag htmlimage Dockerhubusername/htmlimage
 5.$ docker push Dockerhubusername/htmlimage
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
 13.SIMPLE PROGRAM IN JS google
 $ mkdir googleDemoo $ cd googleDemo
 o vi app.js
@@ -363,6 +399,11 @@ npm init
 npm install selenium-webdriver
 npm init
 node app.js
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
+
 14.login form testing selenium
 o vi login.html
 <html>
@@ -445,6 +486,11 @@ npm init
 npm install selenium-webdriver
 npm init
 node mylogin.js
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``
 15.results.mvsr using selenium
 vi collegelogin.js
 const { Builder, By, until } = require("selenium-webdriver");
