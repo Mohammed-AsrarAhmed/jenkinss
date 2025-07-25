@@ -554,4 +554,10 @@ $ sudo systemctl status jenkins
 o $ docker pull sowjanyajindam/htmlimage
 o $ docker run -it sowjanyajindam/htmlimage
 
+FROM nginx:alpine
+WORKDIR /usr/share/nginx/html
+COPY ./main.html /usr/share/nginx/html/index.html
+EXPOSE 80
+
+
 ```
