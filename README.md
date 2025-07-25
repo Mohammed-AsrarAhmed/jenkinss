@@ -559,5 +559,18 @@ WORKDIR /usr/share/nginx/html
 COPY ./main.html /usr/share/nginx/html/index.html
 EXPOSE 80
 
+password for jenkins : sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+GIT COMMANDS
+git add sample.txt
+git commit -m "demo file"
+git branch
+git push -u origin master
+git config --global --unset user.name
+git config --global --unset user.email
+git config --list
+git remote remove origin
+
+docker run -d -p 3000:80 htmlimage
 
 ```
