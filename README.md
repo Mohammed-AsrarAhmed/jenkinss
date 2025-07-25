@@ -551,4 +551,7 @@ $ sudo systemctl enable jenkins
 $ sudo systemctl start jenkins
 $ sudo systemctl status jenkins
 
+o $ docker pull sowjanyajindam/htmlimage
+o $ docker run -it sowjanyajindam/htmlimage
+
 ```
