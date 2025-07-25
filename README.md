@@ -531,4 +531,24 @@ npm install selenium-webdriver
 npm init
 node collegelogin.js
 
+//sudo apt install nodejs
+//sudo apt install npm
+// sudo apt-get update
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.bashrc
+nvm list-remote
+nvm install v16.14.0
+
+
+$ sudo apt-get update
+$ sudo apt-get remove --purge jenkins
+$ sudo apt-get install jenkins
+$ sudo apt-get enable jenkins
+$ sudo apt-get start jenkins
+$ sudo apt-get status jenkins
+$ sudo systemctl enable jenkins
+$ sudo systemctl start jenkins
+$ sudo systemctl status jenkins
+
 ```
